@@ -14,6 +14,9 @@ body{
 }
 .container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
    
 }
 .sidebar{
@@ -26,6 +29,7 @@ body{
     height: 100vh;
     position: sticky;
     top: 0;
+    bottom: 0;
 }
 .logo{
     display: flex;
@@ -297,11 +301,12 @@ cursor: pointer;
    }
   
    .description p1 span{
-    width: 300px
+    width: 410px
 
    }
    .description p1 i{
-    padding-left: 100px;
+    /* margin-left: 100px; */
+    /* font-size: 10px; */
    }
   
  
@@ -504,14 +509,18 @@ cursor: pointer;
    color:#1d9bf0;
   
  }
-
+.last-div{
+  position: sticky;
+  top: 0;
+}
  .whotofollow{
- 
    position: sticky;
    left:0;
    top: 0;
+   bottom: 0;
    border: 1px solid #cfd9de;
    border-radius: 20px;
+  
  }
  .whotofollow p{
    font-size: 20px;
@@ -575,8 +584,9 @@ cursor: pointer;
 
  .terms-conditions{
    margin-bottom:230px;
-   position: absolute;
+   /* position: absolute;
    bottom: 0;
+   top: 0; */
   
  }
  .terms-conditions span{

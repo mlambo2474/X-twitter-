@@ -678,28 +678,13 @@ input:focus {
     max-width: 100%;
   }
 
-  /* Post Button */
+ 
   .postbtn {
     padding: 8px 12px;
     font-size: 12px;
   }
 
-  /* Sub-Actions Icons */
-   /* .sub-action div {
-    margin-right: 20px;
-  }
 
-  .sub-action div img {
-    font-size: 12px;
-  } */
-
-  /* Bookmarks and Downloads */
-  /* .bookmarks {
-    display: flex;
-    align-items: center;
-  }
-
- */
 
   /* Hide Subscriptions on Mobile */
   .subscriptions {

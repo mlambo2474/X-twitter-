@@ -3,22 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ37hpJTlrP3m1e4TCe2y978ExQ51mv5zc70g&s"
       type="image/x-icon"
     />
+        <!-- <link rel="stylesheet" href="style.css" /> -->
     <link rel="stylesheet" href="responsive.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+            <link rel="stylesheet" href="style.css" />
+
     <title>Home / X</title>
+    
   </head>
   <body>
     <div class="container">
-      <div class="sidebar">
+     
+
+
+<div class="sidebar" id="sidebar">
         <div class="logo">
           <span class="logo">
             <svg
@@ -235,7 +241,8 @@
                     alt=""
                   />
                 </div>
-                <div><p>What is happening?!</p></div>
+                <div>
+                  <p>What is happening?!</p></div>
               </div>
             </div>
 
@@ -339,9 +346,10 @@
             <div class="paragraph"><p>Show 70 posts</p></div>
 
             <div class="otherposts">
+              <div class="post-header">
               <div class="forbes">
                 <img
-                  src="https://yt3.ggpht.com/ECkjlnETOWq_v2UuToBHeR_UY42J47UNashpSkdQpcMEMh0eBdBag-81bRs65BOhZzsbGxUW=s68-c-k-c0x00ffffff-no-rj"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGnEHQCvTArRg58PMYpiNDdtmcd0qLgGgNzC1mb8JW1lFvFXbrNF85&s=0"
                   alt=""
                 />
               </div>
@@ -355,7 +363,7 @@
                       height="15px"
                     alt="verified-account"
                   /><span>@Forbes • 2h</span>
-                  <i class="material-icons" style="color: #787a7a">
+                  <i class="material-icons" style="color: #787a7a; padding-right:8px">
                     more_horiz
                   </i></p1
                 >
@@ -364,6 +372,7 @@
                   <img
                     src="https://pbs.twimg.com/media/Gfp6eOtWwAA847r?format=jpg&name=small"
                     alt=""
+              
                   />
                 </div>
 
@@ -373,7 +382,7 @@
                       <img
                         src="data:image/png;base64,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"
                         alt="speech-bubble--v1"
-                        width="30px"
+                        max-width="30px"
                         height="25px"
                       />
                       <span>45K</span>
@@ -421,7 +430,7 @@
                       <img
                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJUlEQVR4nO2XQUoDQRBFK+Ad9ByKuPQCOYAwXXRVpjoL9+IyW3WVc3gWL5ADmLgRPUGUnumgILiwdCaN/0FBzWK6/6ObYYoIAAAAAAD8CRdte5iLaqSRdBo0veTKPdVEI/PjIOmZNb11JfYadH5GVYbXiiSacm360Hb/IdD3e3+dWGy9C3y+WBzsBPq+CEl6pH2FxW5ZbZkDd89FIPdFYsmabqgW+JNAlTAERgYnQP/9BGK8PPL8jHkFonN/YklPQW0zlgA79/cHGPl9+oUA21xj7U/eBYKkO8+vA48t4IUhoPWfwLYsMKHhmRSBH38EKGhadYvM7CpGOxmygth1meJWDoFWv8y2A1eYmZAHVpvmcTBoehiyuBtBbeoKDwAAAABA3/IOohWB+yceVsAAAAAASUVORK5CYII="
                         alt="external-upload-user-interface-tanah-basah-detailed-outline-tanah-basah"
-                        width="25px"
+                        max-width="25px"
                         height="27px"
                         class="downloads"
                       />
@@ -430,13 +439,14 @@
                 </div>
               </div>
 
-              <div></div>
+              </div>
             </div>
              
             <div class="otherposts">
+               <div class="post-header">
               <div class="forbes">
                 <img
-                  src="https://yt3.ggpht.com/ECkjlnETOWq_v2UuToBHeR_UY42J47UNashpSkdQpcMEMh0eBdBag-81bRs65BOhZzsbGxUW=s68-c-k-c0x00ffffff-no-rj"
+                  src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTzRTvPrvhCqcX-Tw9fmy6FEvxOk3Un7XOoKZRjSJb_SOonxoaEHz_eWv6-HftueEAf_rFeRaY&s=19"
                   alt=""
                 />
               </div>
@@ -524,14 +534,15 @@
                   </div>
                 </div>
               </div>
-
+</div>
               <div></div>
             </div>
            
             <div class="otherposts">
+               <div class="post-header">
               <div class="forbes">
                 <img
-                  src="https://yt3.ggpht.com/ECkjlnETOWq_v2UuToBHeR_UY42J47UNashpSkdQpcMEMh0eBdBag-81bRs65BOhZzsbGxUW=s68-c-k-c0x00ffffff-no-rj"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGfWfT8T_aFnU2oojtWU1irIp9puCWUj3KKxTWj3_q1IezcxSF0lfoVIM&s=10"
                 
                   alt=""
                 />
@@ -546,7 +557,7 @@
                     height="15px"
                     alt="verified-account"
                   /><span>@lotto • 2h</span>
-                  <i class="material-icons" style="color: #787a7a">
+                  <i class="material-icons" style="color: #787a7a; padding-right:8px" >
                     more_horiz
                   </i></p1
                 >
@@ -620,12 +631,12 @@
                   </div>
                 </div>
               </div>
-
+ </div>
               <div></div>
             </div>
           </div>
 
-        <div class="mobile-footer">
+         <div class="mobile-footer">
      
           <div class="item">
             <svg
@@ -639,7 +650,6 @@
                 ></path>
               </g>
             </svg>
-            <!-- <span class="material-icons active">home_filled</span> -->
           </div>
   
           <div class="item">
